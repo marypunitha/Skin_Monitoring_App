@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="primaryTextColor">#333333</color>
+    <color name="hintColor">#999999</color>
+    <color name="inputBackgroundColor">#FFFFFF</color>
+    <color name="inputBorderColor">#CCCCCC</color>
+    <color name="buttonBackgroundColor">#000000</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="linkColor">#000000</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="title_color">#333333</color>
+    <color name="outline_color">#CCCCCC</color>
+    <color name="button_color">#6200EE</color>
+    <color name="text_primary_color">#000000</color>
+    <color name="card_background_color">#FFFFFF</color>
+    <color name="input_background_color">#E0E0E0</color>
+    <color name="button_background_color">#6200EE</color>
+
+
+</resources>

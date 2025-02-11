@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up"
+    android:background="@drawable/registerpp">
+
+    <!-- Logo Section -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Title -->
+
+    <!-- Name Input -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="182dp"
+        android:text="Create Your Account"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_below="@id/titleText"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintColor"
+        android:inputType="textPersonName" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_below="@id/editTextName"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintColor"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/editTextEmail"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintColor"
+        android:inputType="textPassword" />
+
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_below="@id/editTextPassword"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/hintColor"
+        android:inputType="textPassword" />
+
+    <!-- Sign-Up Button -->
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_margin="16dp"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:padding="12dp"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:textColor="@color/buttonTextColor"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/loginLinkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log In"
+        android:textColor="@color/linkColor"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+
+</RelativeLayout>

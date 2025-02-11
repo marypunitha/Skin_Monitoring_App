@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilepp"
+    android:padding="16dp"
+    tools:context=".TestFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/skinTemp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Skin Temperature" />
+
+        <EditText
+            android:id="@+id/skinMoisture"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Skin Moisture" />
+
+        <EditText
+            android:id="@+id/envTemp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Environmental Temperature" />
+
+        <EditText
+            android:id="@+id/envPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Atmospheric Pressure" />
+
+        <Button
+            android:id="@+id/analyzeBtn"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analyze" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Result will be shown here"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

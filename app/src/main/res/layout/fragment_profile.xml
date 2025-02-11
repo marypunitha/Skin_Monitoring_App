@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".ProfileFragment"
+    android:background="@drawable/profilepp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        > <!-- Add a rounded card-like background -->
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/ivProfileIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/profile"
+            android:layout_gravity="center"
+            android:contentDescription="Profile Icon"
+            android:layout_marginBottom="16dp"
+
+            android:padding="8dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:focusable="false"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Gender Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/white"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:textColor="@color/black"
+            android:inputType="date"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Skin Type -->
+        <EditText
+            android:id="@+id/etSkinType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skin Type"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Skin Allergies -->
+        <EditText
+            android:id="@+id/etSkinAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skin Allergies"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:minLines="2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
